@@ -8,6 +8,7 @@ body {
   color: #333;
 }
 
+/* Header como faixa */
 header {
   background: #2c3e50;         /* cor da faixa */
   color: white;
@@ -17,6 +18,7 @@ header {
   align-items: center;
 }
 
+/* Container do perfil */
 .profile {
   display: flex;
   align-items: center;
@@ -41,14 +43,6 @@ header {
 .profile-text p {
   margin: 0.4rem 0;
   font-size: 1.1rem;
-}
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-header p {
-  margin: 0.3rem 0;
 }
 
 /* Seções */
@@ -103,10 +97,8 @@ ul {
   margin-right: 1rem;
 }
 
+/* Footer */
 footer {
   background: #2c3e50;
   color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+  text-align: cente
