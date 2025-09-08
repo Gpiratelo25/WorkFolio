@@ -1,3 +1,17 @@
-title: Giovanni Piratelo
+title: "Portfólio - Giovanni Piratelo"
+description: "Analista de Dados | BI | Data Analytics"
+baseurl: "" # deixe vazio para usar no domínio principal
+url: "https://giovannipiratelo.github.io" # troque pelo seu user GitHub
+theme: minima
 
-theme: jekyll-theme-minimal
+# Opções extras
+author:
+  name: Giovanni Piratelo
+  email: gpiratelo@gmail.com
+  linkedin: https://www.linkedin.com/in/giovanni-piratelo/
+  workana: https://www.workana.com/freelancer/c6b48e2dd893049470f0325c86d0c0ac
+
+# Plugins opcionais (se quiser posts ou SEO)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
