@@ -1,13 +1,99 @@
+/* Estilo base */
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
-  margin: 2rem;
-  background: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdfdfd;
   color: #333;
 }
-h1, h2 {
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0.3rem 0;
+}
+
+/* Seções */
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
   color: #2c3e50;
 }
-a {
+
+ul {
+  padding-left: 1.2rem;
+}
+
+/* Work Examples */
+.work-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.work-examples a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Contato */
+.contact a {
   color: #2c3e50;
   text-decoration: none;
+  margin-right: 1rem;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
