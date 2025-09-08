@@ -16,11 +16,13 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .profile {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;                   /* espaço entre a ilustração e o texto */
+  flex-wrap: wrap;
+  max-width: 1000px;
 }
 
 .profile {
