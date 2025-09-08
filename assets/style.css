@@ -21,12 +21,11 @@ header {
   gap: 1.5rem;
 }
 
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white;
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* espaço entre a foto e o texto */
 }
 
 header h1 {
