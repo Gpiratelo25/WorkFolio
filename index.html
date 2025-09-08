@@ -4,81 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Giovanni Piratelo</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #fdfdfd;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      margin: 0.5rem 0;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    h2 {
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      color: #2c3e50;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .contact a {
-      color: #2c3e50;
-      text-decoration: none;
-      margin-right: 1rem;
-    }
-    .work-examples {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1rem;
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header com foto + nome -->
   <header>
-    <h1>👋 Giovanni Piratelo</h1>
-    <p>Analista de Dados | BI | Data Analytics</p>
-    <p>📍 Ferraz de Vasconcelos – SP</p>
+    <div class="profile">
+      <img src="foto.jpg" alt="Foto de Giovanni Piratelo" class="profile-pic">
+      <div>
+        <h1>👋 Giovanni Piratelo</h1>
+        <p>Analista de Dados | BI | Data Analytics</p>
+        <p>📍 Ferraz de Vasconcelos – SP</p>
+      </div>
+    </div>
   </header>
 
+  <!-- About -->
   <section id="about">
     <h2>ℹ️ About Me</h2>
     <p>Sou Analista de Dados e BI com experiência em Tableau, Power BI, SQL e Python. 
     Tenho paixão por transformar dados em insights estratégicos, construindo pipelines, dashboards e modelos preditivos que impactam a tomada de decisão.</p>
   </section>
 
+  <!-- Serviços -->
   <section id="services">
     <h2>🛠️ My Services</h2>
     <ul>
@@ -90,56 +38,36 @@
     </ul>
   </section>
 
+  <!-- Work Examples com cards clicáveis -->
   <section id="work-examples">
     <h2>📂 Work Examples</h2>
     <div class="work-examples">
-      <div class="card"><h3>Dashboard Executivo</h3><p>KPIs dinâmicos no Power BI.</p></div>
-      <div class="card"><h3>Modelo Preditivo</h3><p>Séries temporais com Python.</p></div>
-      <div class="card"><h3>Automação Financeira</h3><p>Relatórios automatizados em VBA.</p></div>
-      <div class="card"><h3>Pipeline de Dados</h3><p>Integração com SQL e Tableau.</p></div>
+      <a href="https://seu-link-powerbi.com" target="_blank" class="card">
+        <h3>Dashboard Executivo</h3>
+        <p>KPIs dinâmicos no Power BI.</p>
+      </a>
+
+      <a href="https://github.com/seuusuario/modelo-preditivo" target="_blank" class="card">
+        <h3>Modelo Preditivo</h3>
+        <p>Séries temporais com Python.</p>
+      </a>
+
+      <a href="https://seu-link-vba.com" target="_blank" class="card">
+        <h3>Automação Financeira</h3>
+        <p>Relatórios automatizados em VBA.</p>
+      </a>
+
+      <a href="https://seu-link-sql-tableau.com" target="_blank" class="card">
+        <h3>Pipeline de Dados</h3>
+        <p>Integração com SQL e Tableau.</p>
+      </a>
     </div>
   </section>
 
+  <!-- Experiência -->
   <section id="experience">
     <h2>👔 Work Experience</h2>
     <ul>
       <li><b>Analista de BI PL | DR Transformação Digital</b> (2022–2024)</li>
       <li><b>Especialista de Operações JR | Movida</b> (2021–2022)</li>
-      <li><b>Analista de Operações JR | Movida</b> (2019–2021)</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>🎓 Education</h2>
-    <ul>
-      <li>Pós-Graduação em Banco de Dados e BI – Univ. Braz Cubas (2022)</li>
-      <li>Gestão Financeira – Univ. Braz Cubas (2017)</li>
-      <li>Especialização em Estatística Aplicada – Univ. Cruzeiro do Sul (em andamento)</li>
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h2>💡 Skill Set</h2>
-    <ul>
-      <li>Data Analytics & BI</li>
-      <li>Exploratory Data Analysis</li>
-      <li>Predictive Modeling & Time Series</li>
-      <li>Statistical Analysis</li>
-      <li>Storytelling com Dados</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>📬 Get in Touch</h2>
-    <p>
-      ✉️ <a href="mailto:gpiratelo@gmail.com">gpiratelo@gmail.com</a><br>
-      🔗 <a href="https://www.linkedin.com/in/giovanni-piratelo/">LinkedIn</a><br>
-      💼 <a href="https://www.workana.com/freelancer/c6b48e2dd893049470f0325c86d0c0ac">Workana</a>
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2025 Giovanni Piratelo - Portfólio</p>
-  </footer>
-</body>
-</html>
+      <li><b>Analista de Operações JR | Movida</b
