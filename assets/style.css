@@ -25,13 +25,23 @@ header {
   max-width: 1000px;
 }
 
-.profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem; /* espaço entre a foto e o texto */
+/* Ilustração estilo cartoon */
+.profile-illustration {
+  width: 180px;                /* ajuste o tamanho */
+  height: auto;
+  border-radius: 10px;         /* bordas levemente arredondadas */
 }
 
+/* Texto ao lado da ilustração */
+.profile-text h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.profile-text p {
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+}
 header h1 {
   margin: 0;
   font-size: 2rem;
